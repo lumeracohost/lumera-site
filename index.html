@@ -4,129 +4,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lumera Co-Host — Gestão inteligente, experiências únicas</title>
+  <title>Lumera Co-Host</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      color: #1a1a1a;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
     }
-    header, section {
-      padding: 60px 20px;
-      text-align: center;
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #f5f5f5;
-    }
-    .logo {
-      max-width: 180px;
-      margin-bottom: 20px;
-    }
-    h1, h2 {
-      color: #1a1a1a;
-    }
-    .section-light {
-      background: #ffffff;
-    }
-    .section-dark {
-      background: #f0f0f0;
-    }
-    .highlight {
-      color: #b49b4c;
-      font-weight: bold;
-    }
-    footer {
-      background: #1a1a1a;
-      color: #fff;
-      padding: 30px 20px;
+      background-color: #1b1b1b;
+      color: white;
+      padding: 2rem;
       text-align: center;
     }
-    a {
-      color: #b49b4c;
-      text-decoration: none;
+    header img {
+      max-width: 180px;
+      margin-bottom: 1rem;
     }
-    .btn {
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1600x900/?luxury-home,beach') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      background-color: rgba(0, 0, 0, 0.6);
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #b49b4c;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
+      padding: 1rem 2rem;
+      border-radius: 12px;
     }
-    @media (min-width: 768px) {
-      .columns {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
-      }
-      .column {
-        flex: 1;
-        max-width: 300px;
-        text-align: left;
+    .features, .clientes, .contato {
+      text-align: center;
+    }
+    .features h2, .clientes h2, .contato h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #1b1b1b;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card p {
+      padding: 1rem;
+    }
+    .clientes p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .contato p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background-color: #1b1b1b;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="Logo_Lumera.png" alt="Logo Lumera Co-Host" class="logo" />
+    <img src="Logo Lumera Co-Host Minimalista.png" alt="Lumera Co-Host Logo" />
     <h1>Gestão inteligente, experiências únicas</h1>
-    <p>Especialistas em co-hosting para imóveis de alto padrão.</p>
   </header>
 
-  <section class="section-light">
-    <h2>Sobre a Lumera</h2>
-    <p>Transformamos a experiência de aluguel por temporada em um processo eficiente e lucrativo para proprietários, proporcionando excelência e conforto para hóspedes.</p>
+  <section class="hero">
+    <h1>Co-hosting de alto padrão no Litoral Norte do RS</h1>
   </section>
 
-  <section class="section-dark">
-    <h2>Como Funciona</h2>
-    <div class="columns">
-      <div class="column">
-        <h3>1. Avaliação</h3>
-        <p>Analisamos o seu imóvel e potencial de rendimento.</p>
+  <section class="features">
+    <h2>Serviços de Co-Host Premium</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?interior,house" alt="Imóvel organizado">
+        <p>Gestão completa de reservas, comunicação com hóspedes, check-in/check-out profissional e manutenção preventiva.</p>
       </div>
-      <div class="column">
-        <h3>2. Preparação</h3>
-        <p>Organizamos fotos, descrição e criamos seu anúncio.</p>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?vacation,family" alt="Família feliz">
+        <p>Experiências memoráveis para hóspedes, com acolhimento, conforto e suporte personalizado.</p>
       </div>
-      <div class="column">
-        <h3>3. Gestão Completa</h3>
-        <p>Gerenciamos reservas, limpeza e atendimento ao hóspede.</p>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?beach,torres" alt="Praia do litoral RS">
+        <p>Seu imóvel valorizado com fotos profissionais, anúncios otimizados e alta ocupação no litoral gaúcho.</p>
       </div>
     </div>
   </section>
 
-  <section class="section-light">
-    <h2>Serviços</h2>
-    <ul>
-      <li>Gestão de reservas 24/7</li>
-      <li>Precificação inteligente</li>
-      <li>Check-in e check-out</li>
-      <li>Limpeza e manutenção profissional</li>
-      <li>Suporte ao hóspede</li>
-      <li>Relatórios de desempenho</li>
-    </ul>
+  <section class="clientes">
+    <h2>Seja nosso cliente</h2>
+    <p>Confie a gestão do seu imóvel de temporada à Lumera Co-Host. Oferecemos um serviço completo, profissional e com toque humano — ideal para quem busca rentabilidade sem preocupações.</p>
   </section>
 
-  <section class="section-dark">
-    <h2>Seja Nosso Cliente</h2>
-    <p>Você tem um imóvel para aluguel por temporada? Com a <span class="highlight">Lumera Co-Host</span>, você maximiza seus lucros enquanto nós cuidamos de tudo:</p>
-    <ul>
-      <li>Alcance mais hóspedes com anúncios otimizados</li>
-      <li>Evite dor de cabeça com suporte completo e atendimento profissional</li>
-      <li>Receba relatórios detalhados com total transparência</li>
-    </ul>
-    <a href="https://wa.me/555192108288" class="btn">Fale conosco pelo WhatsApp</a>
-  </section>
-
-  <section class="section-light">
+  <section class="contato">
     <h2>Contato</h2>
-    <p>WhatsApp: <a href="https://wa.me/555192108288">(51) 92108-2888</a></p>
-    <p>Email: <a href="mailto:lumeracohost@gmail.com">lumeracohost@gmail.com</a></p>
+    <p>📱 WhatsApp: (51) 92108-2888</p>
+    <p>✉️ E-mail: lumeracohost@gmail.com</p>
   </section>
 
   <footer>
